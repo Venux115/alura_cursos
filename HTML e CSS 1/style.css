@@ -1,8 +1,15 @@
 body{
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
     background-color: #393357;
     color: #f6f6f6;
 }
 
-strong{
+main{
+    box-sizing: border-box;
+}
+
+.titulo_destaque{
     color: #74D672;
 }
