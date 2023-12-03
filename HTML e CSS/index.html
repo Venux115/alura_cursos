@@ -8,12 +8,19 @@
       content="width=device-width, 
         initial-scale=1.0"
     />
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
-    <title>portifólio</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Home - portifólio</title>
   </head>
   <body>
-    <header></header>
+    <header>
+        <nav class="navbar"> 
+          <a href="#" class="navbar__link">Home</a>
+          <a href="about.html" class="navbar__link">Sobre min</a>
+          <a href="#" class="navbar__link">Currículo</a>
+          <a href="#" class="navbar__link">Projétos</a>
+        </nav>
+    </header>
 
     <main class="container__main">
       <section class="container__main__conteudo">
@@ -25,30 +32,41 @@
           Olá! Sou <strong class="titulo_destaque">Vinícius Goulart</strong>
         </p>
         <div class="container__main__botoes">
+          <h2 class="container__main__botoes_titulo">Acesse minhas redes.</h2>
           <a
             class="container__main__botoes__botoes"
             href="https://www.instagram.com/azkeel.x/"
             target="_blank"
-            >Instagram</a
           >
+            <i class="bi bi-instagram"></i>
+            Instagram
+          </a>
           <a
             class="container__main__botoes__botoes"
             href="https://github.com/Venux115"
             target="_blank"
-            >Github</a
           >
+            <i class="bi bi-github"></i>
+            Github
+          </a>
           <a
             class="container__main__botoes__botoes"
             href="https://www.linkedin.com/in/vin%C3%ADcius-goulart-359a87235/"
             target="_blank"
-            >Linkedin</a
           >
+            <i class="bi bi-linkedin"></i>
+            Linkedin
+          </a>
         </div>
       </section>
 
-      <img src="img.jpeg" alt="foto de perfil do vinícius" />
+      <img src="assets/img.jpeg" alt="foto de perfil do vinícius" />
     </main>
 
-    <footer></footer>
+    <footer class="rodape">
+      <p>
+          Desenvolvido por vinícius +
+      </p>
+    </footer>
   </body>
 </html>
