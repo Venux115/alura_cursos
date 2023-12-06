@@ -118,8 +118,11 @@ body{
     transition: 250ms;
 }
 
-img{
+.container__main__img{
     width: 50%;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
 
 }
 
@@ -149,9 +152,10 @@ img{
         
     }
 
-    img{
+    .container__main__img{
         width: 100%;
         padding: 0% 10%;
+        
     }
 
     .navbar{
