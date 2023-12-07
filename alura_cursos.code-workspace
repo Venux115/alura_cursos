@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../OneDrive/Área de Trabalho/Portifolio"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "alura_cursos"
+	}
+}

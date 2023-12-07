@@ -10,10 +10,13 @@
 }
 
 body{
+    height: 100vh;
     box-sizing: border-box;
     background-color: var(--color-primaria);
     color: var(--color-secundaroa);
-    font-family: var(--fonte)
+    font-family: var(--fonte);
+    
+    
 }
 
 .navbar{
@@ -54,21 +57,23 @@ body{
 
 .container__main{
     padding: 0% 15%;
-    margin: 3% 0;
+    margin: 2rem 0;
     
     display: flex;
     justify-content: space-between;
-    gap: 82px;
+    align-items: center;
+    gap: 72px;
+    height: 85%;
 }
 
 .container__main__conteudo{
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 28px;
     width: 50%;
 }
 
-.container__main__conteudo_titulo{
+.container__main__conteudo__titulo{
     font-size: 1.5rem;
     text-align: justify;
     
@@ -85,10 +90,10 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 32px;
+    gap: 20px;
 }
 
-.container__main__botoes_titulo{
+.container__main__botoes__titulo{
     font-weight: 400;
     font-size: 1rem;
 }
@@ -96,7 +101,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 16px;
+    gap: 0.2rem;
 
     color: var(--color-destaque);
     width: 50%;
@@ -106,8 +111,8 @@ body{
     text-decoration: none;
     font-weight: 600;
     
-    padding: 1.5rem;
-    margin: 5px;
+    padding: 1.2rem;
+    margin: 3px;
     border-radius: 8px;
     border: 2px solid var(--color-destaque);
 }
@@ -120,6 +125,7 @@ body{
 
 .container__main__img{
     width: 50%;
+    height: 75%;
     border-radius: 10px;
     object-fit: cover;
     object-position: center;
@@ -127,16 +133,23 @@ body{
 }
 
 .rodape{
+    display: block;
+    width: 100%;
+    position: relative;
+    bottom: 0;
     background-color: var(--color-destaque);
     color: var(--color-primaria);
-
     text-align: center;
     font-size: 1.5rem;
+    padding: 1.5rem;
 
-    padding: 1rem;
 }
 
 @media (max-width: 1200px) {
+    body
+    {
+        height: auto;
+    }
     .container__main{
         padding: 0% 0%;
         margin: 3% 0;
@@ -159,7 +172,7 @@ body{
     }
 
     .navbar{
-        padding: 15%;    
+        margin: 1.5rem;    
     }
 
     .container__main__botoes__botoes{
