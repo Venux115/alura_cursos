@@ -13,7 +13,9 @@
 
 <h2>Estrutura do Projeto</h2>
 <p>index.html: Página principal do portfólio.<p>
-<p>styles.css: Folha de estilo para personalizar o layout e a aparência.<p>
+<p>about.html: Página do portfólio onde falo sobre mim.<p>  
+<p>curriculo.html: Página do portfólio onde listo cusos que fiz e minhas formações.<p>  
+<p>pasta styles: Folhas de estilo para personalizar o layout e a aparência.<p>
   
 <h2>Como Usar</h2>
 <h3>Clone este repositório:</h3>
