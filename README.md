@@ -2,7 +2,7 @@
 <p>Este é um repositório para o meu projeto de portfólio pessoal, onde apresento minhas habilidades, projetos e informações relevantes sobre mim. O projeto é construído utilizando HTML e CSS para uma experiência simples e elegante.</p>
 
 <h2>Visualização Online</h2>
-<p>Você pode visualizar o meu portfólio online <a href="https://vercel.com/vinicius-s-projects-44aa51b6/portifolio/9pzGAK18ph32mUjikRS5WhrBGPep">aqui</a>.</p>
+<p>Você pode visualizar o meu portfólio online <a target="_blank" href="https://vercel.com/vinicius-s-projects-44aa51b6/portifolio/9pzGAK18ph32mUjikRS5WhrBGPep](https://portifolio-ll9jn2x8u-vinicius-s-projects-44aa51b6.vercel.app/)">aqui</a>.</p>
 
 
 <h2>Tecnologias Utilizadas</h2>
