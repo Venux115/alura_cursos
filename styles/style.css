@@ -15,7 +15,7 @@
 }
 
 body{
-    height: 100vh;
+    min-height: 100vh;
     box-sizing: border-box;
     background-color: var(--color-primaria);
     color: var(--color-secundaroa);
@@ -61,6 +61,7 @@ body{
 }
 
 .container__main{
+    min-height: 68.6vh;
     padding: 0% 15%;
     margin: 2rem 0;
     
@@ -156,30 +157,57 @@ body{
 
 .card
 {
-    flex: 0;
-    flex-basis: 30rem;
+    
+    
     list-style-type: none;
+    
+    
+    width: 30rem;
+    
 
+    
+    
+    
+    
 }
 
 .card a
 {
-    text-decoration: none;
-    color: var(--color-primaria);
     height: 10rem;
-    
-    display: block;
-    background-color: var(--color-destaque);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--color-secundaroa);
     color: var(--color-primaria);
+
     border-radius: 10px;
-    border: 4px solid var(--color-secundaroa);
+    border: 4px solid var(--color-destaque);
+    text-decoration: none;
+
+    box-sizing: border-box;
+    transition: 300ms;
+    
 }
 
 .card a:hover
 {
-    background-color: var(--color-primaria);
-    color: var(--color-secundaroa);
-    transition: 300ms;
+    color: var(--color-primaria);
+    background-color: var(--color-destaque);
+    
+    
+}
+
+.card__titulo
+{
+    width: 50%;
+}
+
+.card__img
+{
+    height: 70%;
+    padding: 1rem;
 }
 
 .rodape{
