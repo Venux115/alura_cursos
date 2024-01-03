@@ -15,31 +15,31 @@
 }
 
 body{
-    height: 100vh;
+    min-height: 100vh;
     box-sizing: border-box;
     background-color: var(--color-primaria);
     color: var(--color-secundaroa);
     font-family: var(--fonte);
-    
-    
+
+
 }
 
 .navbar{
-   
+
     height: 5rem;
 
     background-color: var(--color-primaria);
-    color: var(--color-destaque2);
+
 
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 2rem;    
+    gap: 2rem;
 }
 
 .navbar__link{
-    
+
     text-decoration: none;
     color: var(--color-destaque);
 
@@ -51,9 +51,9 @@ body{
 
 .navbar a:hover
 {
-    font-size:1.5rem; 
+    font-size:1.5rem;
     color: var(--color-destaque);
-    
+
 }
 
 .titulo_destaque{
@@ -61,9 +61,10 @@ body{
 }
 
 .container__main{
-    padding: 0% 15%;
+    min-height: 68.6vh;
+    padding: 0 15%;
     margin: 2rem 0;
-    
+
     display: flex;
     justify-content: space-between;
 
@@ -76,7 +77,7 @@ body{
     flex-direction: column;
     gap: 28px;
     width: 50%;
-    
+
 }
 
 .curriculo
@@ -89,7 +90,7 @@ body{
 .container__main__conteudo__titulo{
     font-size: 1.5rem;
     text-align: justify;
-    
+
 }
 
 .container__main__conteudo_paragrafo{
@@ -118,12 +119,12 @@ body{
 
     color: var(--color-destaque);
     width: 50%;
-    
+
     text-align: center;
     font-size: 1.5rem;
     text-decoration: none;
     font-weight: 600;
-    
+
     padding: 1.2rem;
     margin: 3px;
     border-radius: 8px;
@@ -156,30 +157,57 @@ body{
 
 .card
 {
-    flex: 0;
-    flex-basis: 30rem;
+
+
     list-style-type: none;
+
+
+    width: 30rem;
+
+
+
+
+
 
 }
 
 .card a
 {
-    text-decoration: none;
-    color: var(--color-primaria);
     height: 10rem;
-    
-    display: block;
-    background-color: var(--color-destaque);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--color-secundaroa);
     color: var(--color-primaria);
+
     border-radius: 10px;
-    border: 4px solid var(--color-secundaroa);
+    border: 4px solid var(--color-destaque);
+    text-decoration: none;
+
+    box-sizing: border-box;
+    transition: 300ms;
+
 }
 
 .card a:hover
 {
-    background-color: var(--color-primaria);
-    color: var(--color-secundaroa);
-    transition: 300ms;
+    color: var(--color-primaria);
+    background-color: var(--color-destaque);
+
+
+}
+
+.card__titulo
+{
+    width: 50%;
+}
+
+.card__img
+{
+    height: 70%;
+    padding: 1rem;
 }
 
 .rodape{
@@ -201,28 +229,28 @@ body{
         height: auto;
     }
     .container__main{
-        padding: 0% 0%;
+        padding: 0;
         margin: 3% 0;
 
         flex-direction: column-reverse;
-        
+
         gap: 32px;
     }
 
     .container__main__conteudo{
-       width: 100%;
-       padding: 0 10%;
-        
+        width: 100%;
+        padding: 0 10%;
+
     }
 
     .container__main__img{
         width: 100%;
-        padding: 0% 10%;
-        
+        padding: 0 10%;
+
     }
 
     .navbar{
-        margin: 1.5rem;    
+        margin: 1.5rem;
     }
 
     .container__main__botoes__botoes{
@@ -231,7 +259,7 @@ body{
     }
 
     .container__main__botoes :hover{
-        background-color: var(--color-primariar);
+        background-color: var(--color-primaria);
         color: var(--color-destaque);
         transition: 250ms;
     }
