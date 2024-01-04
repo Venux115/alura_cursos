@@ -1,7 +1,7 @@
 const listaConcluido = document.querySelector(".concluidos")
 const listaAndamento = document.querySelector(".em-andamento")
 
-cursosConcluidos = fetch("http://localhost:8000/concluidos")
+cursosConcluidos = fetch("https://portifolio-jpn3.onrender.com/concluidos")
     .then(retorno => retorno.json())
     .then(cursos => {
         cursos.forEach(curso =>{
@@ -11,7 +11,7 @@ cursosConcluidos = fetch("http://localhost:8000/concluidos")
         })
     })
 
-cursosAndamento = fetch("http://localhost:3000/em-andamento")
+cursosAndamento = fetch("https://portifolio-jpn3.onrender.com/em-andamento")
     .then(retorno => retorno.json())
     .then(cursos => {
         cursos.forEach(curso =>{
