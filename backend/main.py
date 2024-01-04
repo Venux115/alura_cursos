@@ -5,6 +5,7 @@ app = FastAPI()
 
 origins = [
     "http://localhost:63342",
+    "https://portifolio-jpn3.onrender.com"
 ]
 
 app.add_middleware(
