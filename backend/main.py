@@ -5,7 +5,8 @@ app = FastAPI()
 
 origins = [
     "http://localhost:63342",
-    "https://portifolio-jpn3.onrender.com"
+    "https://portifolio-jpn3.onrender.com",
+    "https://formacao-de-html-e-css.vercel.app"
 ]
 
 app.add_middleware(
