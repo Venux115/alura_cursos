@@ -3,11 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
-origins = [
-    "http://localhost:63342",
-    "https://portifolio-jpn3.onrender.com",
-    "https://formacao-de-html-e-css.vercel.app"
-]
+origins = ["*"]
 
 app.add_middleware(
     CORSMiddleware,
