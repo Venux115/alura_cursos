@@ -1,9 +1,12 @@
 const listaConcluido = document.querySelector(".concluidos")
 const listaAndamento = document.querySelector(".em-andamento")
 
+
+
 cursosConcluidos = fetch("https://portifolio-jpn3.onrender.com/concluidos")
     .then(retorno => retorno.json())
     .then(cursos => {
+        listaConcluido.textContent = ""
         cursos.forEach(curso =>{
 
             listaConcluido.appendChild(criarCard(curso.titulo, curso.link, curso.icone))
@@ -14,10 +17,14 @@ cursosConcluidos = fetch("https://portifolio-jpn3.onrender.com/concluidos")
 cursosAndamento = fetch("https://portifolio-jpn3.onrender.com/em-andamento")
     .then(retorno => retorno.json())
     .then(cursos => {
+        listaAndamento.textContent = ""
         cursos.forEach(curso =>{
             listaAndamento.appendChild(criarCard(curso.titulo, curso.certificado, curso.icone))
 
         })
+    })
+    .catch(erro => {
+        listaAndamento.innerHTML = `Ocorreu um erro! (<code>${erro}</code>)`
     })
 
 
