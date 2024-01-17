@@ -10,9 +10,10 @@
     />
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/style.css" />
-    <title>Home - portifólio</title>
-    <script src="main.js" defer></script>
+    <title>Home - portfólio</title>
+    
   </head>
+  
   <body>
     <header>
       <nav class="navbar">
@@ -43,7 +44,17 @@
     </main>
 
     <footer class="rodape">
-      <p>Desenvolvido por vinícius +</p>
+      <p>Desenvolvido por Vinícius +</p>
     </footer>
   </body>
+  <script src="curriculoScript.js"></script>
+  <script src="app/controller/CursoController.js"></script> 
+  <script src="app/model/Curso.js"></script>
+  <script>
+    
+    let cursoController = new CursoController();
+    cursoController.process()
+    
+  </script>
+
 </html>
