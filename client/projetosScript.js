@@ -1,7 +1,10 @@
 const container = document.querySelector('.container__main__conteudo')
 let listaDeTitulos = []
 
-fetch("http://127.0.0.1:8000/projetos")
+const linkProducao = "http://127.0.0.1:8000";
+const linkDeploy = "https://portifolio-jpn3.onrender.com";
+
+fetch(`${linkDeploy}/projetos`)
     .then((result) => result.json())
     .then((projetos) => {
         

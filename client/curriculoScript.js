@@ -6,7 +6,7 @@ const linkDeploy = "https://portifolio-jpn3.onrender.com";
 
 
 
-    fetch(`${linkProducao}/concluidos`)
+    fetch(`${linkDeploy}/concluidos`)
       .then((result) => result.json())
       .then((cursos) => {
         
@@ -23,7 +23,7 @@ const linkDeploy = "https://portifolio-jpn3.onrender.com";
       });
 
 
-    fetch(`${linkProducao}/em-andamento`)
+    fetch(`${linkDeploy}/em-andamento`)
       .then((result) => result.json())
       .then((cursos) => {
         console.log(cursos)
