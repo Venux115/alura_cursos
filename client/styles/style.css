@@ -267,7 +267,7 @@ body {
     display: flex;
     flex-direction: column-reverse;
 
-    margin: 3% 4rem;
+    margin: 3% 2rem;
 
     gap: 32px;
   }
@@ -278,7 +278,7 @@ body {
 
   .container__main__conteudo {
     width: 100%;
-    padding: 0 10%;
+    
   }
 
   .container__main__img {
@@ -309,6 +309,16 @@ body {
 
   li.card {
     width: 23rem;
+  }
+
+  
+}
+
+@media (max-width:800px) {
+  .lista-projeto{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 }
 
