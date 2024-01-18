@@ -77,6 +77,10 @@ body {
   width: 50%;
 }
 
+.container__main__conteudo__curriculo{
+  width: 100%;
+}
+
 .container__main__conteudo__titulo {
   font-size: 1.5rem;
   text-align: justify;
@@ -143,7 +147,23 @@ body {
 
 .lista-item {
   list-style-type: none;
+  
+}
+.lista_curriculo-item{
   width: 25rem;
+}
+
+.lista-projeto{
+  justify-content: start;
+  gap: 4rem;
+  
+}
+
+.secao-projetos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .card {
