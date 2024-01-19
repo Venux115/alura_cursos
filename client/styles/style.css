@@ -214,8 +214,10 @@ body {
 
 .projeto__card__img {
   width: 100%;
-  height: 70%;
+  min-height: 70%;
+  max-height: 70%;
   object-fit: cover;
+  object-position: 0;
   border-radius: 5px 5px 0 0;
 }
 

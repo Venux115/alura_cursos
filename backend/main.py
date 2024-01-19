@@ -132,6 +132,14 @@ list_projetos = [
         "foto-projeto": "cronometro.png",
         "titulo": "Cronômetro",
         "repositorio": "https://github.com/Venux115/cronometro"
+    },
+    {
+     "id": 2,
+      "tipo": "PHP",
+      "link-hospedagem": "https://github.com/Venux115/ArtOrganizer",
+      "foto-projeto": "artorganizer.png",
+      "titulo": "ArtOrganizer",
+      "repositorio": "https://github.com/Venux115/ArtOrganizer"
     }
 ]
 
