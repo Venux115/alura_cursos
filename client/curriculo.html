@@ -1,60 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta
-      name="viewport"
-      content="width=device-width, 
+            name="viewport"
+            content="width=device-width,
         initial-scale=1.0"
     />
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/reset.css"/>
+    <link rel="stylesheet" href="styles/style.css"/>
     <title>Home - portfólio</title>
-    
-  </head>
-  
-  <body>
-    <header>
-      <nav class="navbar">
+
+</head>
+
+<body>
+<header>
+    <nav class="navbar">
         <a href="index.html" class="navbar__link">Home</a>
         <a href="about.html" class="navbar__link">Sobre mim</a>
         <a href="curriculo.html" class="navbar__link">Currículo</a>
         <a href="projetos.html" class="navbar__link">Projetos</a>
-      </nav>
-    </header>
+    </nav>
+</header>
 
-    <main class="container__main curriculo">
-      
-        <h2 class="container__main__conteudo__titulo">Formações</h2>
-        <p class="container__main__conteudo_paragrafo">
-          Ensino Médio Técnico: CEDUP Abílio Paulo - Informática (Conclusão
-          prevista para 12/2023)
-        </p>
-        <h2 class="container__main__conteudo__titulo">Cursos</h2>
-        <h3 class="container__main__conteudo__subtitulo">Em andamento</h3>
+<main class="container__main curriculo">
 
-        <ul class="lista em-andamento"><span>Carregando aguarde ...</span></ul>
-        <h3 class="container__main__conteudo__subtitulo">Concluído</h3>
+    <h2 class="container__main__conteudo__titulo">Formações</h2>
+    <p class="container__main__conteudo_paragrafo">
+        Ensino Médio Técnico: CEDUP Abílio Paulo - Informática
+    </p>
+    <h2 class="container__main__conteudo__titulo">Cursos</h2>
+    <h3 class="container__main__conteudo__subtitulo">Em andamento</h3>
 
-        <ul class="lista concluidos"><span>Carregando aguarde ...</span></ul>
-    
+    <ul class="lista em-andamento"><span>Carregando aguarde ...</span></ul>
+    <h3 class="container__main__conteudo__subtitulo">Concluído</h3>
 
-     
-    </main>
+    <ul class="lista concluidos"><span>Carregando aguarde ...</span></ul>
 
-    <footer class="rodape">
-      <p>Desenvolvido por Vinícius +</p>
-    </footer>
-  </body>
-  <script src="curriculoScript.js"></script>
-  <script src="app/controller/CursoController.js"></script> 
-  <script src="app/model/Curso.js"></script>
-  <script>
-    
+
+</main>
+
+<footer class="rodape">
+    <p>Desenvolvido por Vinícius +</p>
+</footer>
+</body>
+<script src="curriculoScript.js"></script>
+<script src="app/controller/CursoController.js"></script>
+<script src="app/model/Curso.js"></script>
+<script>
+
     let cursoController = new CursoController();
     cursoController.process()
-    
-  </script>
+
+</script>
 
 </html>

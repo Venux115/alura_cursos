@@ -9,25 +9,27 @@ const linkDeploy = "https://portifolio-jpn3.onrender.com";
     fetch(`${linkDeploy}/concluidos`)
       .then((result) => result.json())
       .then((cursos) => {
+        
         listaConcluido.textContent = "";
         cursos.forEach((curso) => {
+      
           listaConcluido.appendChild(
             criarCard(curso.titulo, curso.link, curso.icone)
           );
         });
       })
       .catch((error) => {
-        
-        listaAndamento.innerHTML = `Ocorreu um erro! (<code>${erro}</code>)`;
+        listaAndamento.innerHTML = `Ocorreu um erro! (<code>${error}</code>)`;
       });
 
 
     fetch(`${linkDeploy}/em-andamento`)
       .then((result) => result.json())
       .then((cursos) => {
-        listaConcluido.textContent = "";
+        console.log(cursos)
+        listaAndamento.textContent = "";
         cursos.forEach((curso) => {
-          listaConcluido.appendChild(
+          listaAndamento.appendChild(
             criarCard(curso.titulo, curso.link, curso.icone)
           );
         });
@@ -41,7 +43,7 @@ const linkDeploy = "https://portifolio-jpn3.onrender.com";
 
 function criarCard(titulo, certificado_link, icone_caminho) {
   const li = document.createElement("li");
-  li.classList.add("lista-item");
+  li.classList.add("lista_curriculo-item", "lista-item");
 
   const ancora = document.createElement("a");
   ancora.setAttribute("href", certificado_link);
