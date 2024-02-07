@@ -1,0 +1,43 @@
+.navbar {
+    height: 5rem;
+
+    background-color: var(--color-primaria);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navbar__link {
+    text-decoration: none;
+    color: var(--color-destaque);
+
+    font-family: "Arvo", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: 250ms;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar button:hover {
+    font-size: 1.5rem;
+    color: var(--color-destaque);
+}
+
+@media (max-width: 1200px) {
+    .navbar {
+        margin: 1.5rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .navbar {
+        padding: 10px;
+        flex-wrap: wrap;
+        margin: 20px 10px;
+    }
+}
