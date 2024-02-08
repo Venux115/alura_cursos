@@ -8,10 +8,20 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    
 }
 body {
     font-size: 100%;
     list-style-type: none;
+    
+}
+
+#root{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
 
 :root {

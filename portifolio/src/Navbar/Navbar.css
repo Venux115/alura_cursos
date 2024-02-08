@@ -16,21 +16,26 @@
 
     font-family: "Arvo", sans-serif;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.5rem;
     transition: 250ms;
     background-color: transparent;
     border: none;
     cursor: pointer;
 }
 
-.navbar button:hover {
-    font-size: 1.5rem;
-    color: var(--color-destaque);
+.navbar__link:hover {
+    z-index: 100;
+    font-size: 2rem;
 }
 
 @media (max-width: 1200px) {
     .navbar {
         margin: 1.5rem;
+        height: 8rem;
+    }
+
+    .navbar__link {
+        font-size: 1rem;
     }
 }
 

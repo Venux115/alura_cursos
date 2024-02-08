@@ -18,7 +18,7 @@ export default function Navbar({handleClickHome , handleClickSobreMim, handleCli
                 >
                     Sobre Mim
                 </button>
-                <button
+                {/* <button
                     type="button"
                     onClick={handleClickCurriculo}
                     className="navbar__link"
@@ -31,7 +31,7 @@ export default function Navbar({handleClickHome , handleClickSobreMim, handleCli
                     className="navbar__link"
                 >
                     Projetos
-                </button>
+                </button> */}
             </nav>
         </header>
     );

@@ -1,11 +1,11 @@
 .container {
-    min-height: 68.6vh;
-    padding: 0 15%;
+    min-height: 100%;
+    padding: 0 5rem;
     margin: 2rem 0;
 
     display: flex;
-
-    justify-content: center;
+    flex-grow: 1;
+    justify-content: space-evenly;
     gap: 28px;
 }
 
@@ -39,15 +39,12 @@
 }
 
 .img-fotoPerfil {
-    width: 50%;
-    height: 75%;
+    
+    min-width: 25rem;
+    max-height: 25rem;
     border-radius: 10px;
     object-fit: cover;
     object-position: center;
-}
-
-.curriculo {
-    flex-direction: column;
 }
 
 .lista {
@@ -63,103 +60,13 @@
   width: 25rem;
 }
 
-.lista-projeto__item__card {
-  box-sizing: border-box;
-  height: 20rem;
-  width: 20rem;
-  display: flex;
-  flex-direction: column;
-  border-radius: 10px;
-  border: 4px solid var(--color-destaque);
-  text-decoration: none;
-  background-color: var(--color-secundaria);
-  color: var(--color-primaria);
-  cursor: pointer;
-
-  transition: 300ms;
-}
-
-
-.projeto__card__img {
-  width: 100%;
-  height: 70%;
-  object-fit: cover;
-  border-radius: 5px 5px 0 0;
-}
-
-.projeto__card__body{
-  display: flex;
-  height: 100%;
-  width: 100%;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.projeto__card__body i {
-  font-size: 2.5rem;
-}
-
-.projeto__card__titulo {
-  font:  var(--fonte);
-  font-size: 1.5rem;
-  font-weight: 500;
-  
-}
-
-.projeto__card__icone{
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.card {
-  height: 10rem;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background-color: var(--color-secundaroa);
-  color: var(--color-primaria);
-
-  border-radius: 10px;
-  border: 4px solid var(--color-destaque);
-  text-decoration: none;
-
-  box-sizing: border-box;
-  transition: 300ms;
-}
-
-
-
-
-
-
-
-
-.card:hover, .lista-projeto__item__card:hover {
-  color: var(--color-primaria);
-  background-color: var(--color-destaque);
-}
-.card__titulo{
-  width: 50%;
-}
-
-
-
-.card__img {
-  height: 70%;
-  padding: 1rem;
-}
-
-
 @media (max-width: 1200px) {
     .container {
         padding: 0;
         display: flex;
         flex-direction: column-reverse;
 
-        margin: 3% 4rem;
+        margin: 3% 2rem;
 
         gap: 32px;
     }

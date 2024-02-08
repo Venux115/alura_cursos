@@ -1,0 +1,51 @@
+.lista-projeto__item__card {
+    box-sizing: border-box;
+    height: 20rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 4px solid var(--color-destaque);
+    text-decoration: none;
+    background-color: var(--color-secundaria);
+    color: var(--color-primaria);
+    cursor: pointer;
+
+    transition: 300ms;
+}
+
+.lista-projeto__item__card:hover {
+    color: var(--color-primaria);
+    background-color: var(--color-destaque);
+}
+
+.projeto__card__img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+.projeto__card__body {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.projeto__card__body i {
+    font-size: 2.5rem;
+}
+
+.projeto__card__titulo {
+    font: var(--fonte);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.projeto__card__icone {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
